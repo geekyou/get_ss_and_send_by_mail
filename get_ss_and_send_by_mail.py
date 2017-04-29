@@ -1,4 +1,5 @@
-#! usr/bin/env/ python
+#! /usr/bin/python3
+#! _*_ coding:utf-8 _*_
 
 import re
 import requests
@@ -12,6 +13,14 @@ url = "https://doub.bid/sszhfx/"
 
 html = requests.get(url,headers = headers)
 ss_account_number = "A good day! \n"
+ss_account_number += "公众号'做一个极客'\n"
+ss_account_number += "ss客户端下载地址\n"
+ss_account_number += "https://my.pcloud.com/publink/show?code=XZPtsIZtdDcKUI9JwbNW2OIkGvMcQht2k9V\n"
+ss_account_number += "github开源仓库\n"
+ss_account_number += "https://github.com/geekyou/get_ss_and_send_by_mail"
+ss_account_number += "欢迎star\(^o^)/~\n"
+ss_account_number += "将下面的ss:// or ssr:// 批量导入客户端即可"
+
 ss_ = re.findall('ss://(.*?)" target="_blank">',html.text) #获取ss://
 for each in ss_:
     # print("ss://" + each)
@@ -28,7 +37,7 @@ _pwd  = "密码"      #邮箱密码
 #  mail_list
 
 
-mail_list = ["1179833172@qq.com"]  # 收件人邮箱 是一个列表
+mail_list = ["875101164@qq.com"]  # 收件人邮箱 是一个列表
 
 
 # mail_list
