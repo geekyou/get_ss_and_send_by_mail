@@ -17,9 +17,9 @@ ss_account_number += "公众号'做一个极客'\n"
 ss_account_number += "ss客户端下载地址\n"
 ss_account_number += "https://my.pcloud.com/publink/show?code=XZPtsIZtdDcKUI9JwbNW2OIkGvMcQht2k9V\n"
 ss_account_number += "github开源仓库\n"
-ss_account_number += "https://github.com/geekyou/get_ss_and_send_by_mail"
+ss_account_number += "https://github.com/geekyou/get_ss_and_send_by_mail\n"
 ss_account_number += "欢迎star\(^o^)/~\n"
-ss_account_number += "将下面的ss:// or ssr:// 批量导入客户端即可"
+ss_account_number += "将下面的ss:// or ssr:// 批量导入客户端即可\n"
 
 ss_ = re.findall('ss://(.*?)" target="_blank">',html.text) #获取ss://
 for each in ss_:
